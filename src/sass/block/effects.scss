@@ -1,0 +1,210 @@
+
+.effects__title {
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.effects__subtitle {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #b13a60;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.effects__description {
+    max-width: 895px;
+    margin-right: auto;
+    margin-bottom: 90px;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+.effects__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.effects__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 390px;
+    margin: -14px;
+
+    &_left {
+        .effects__item {
+            &:nth-child(1) {
+                background-image: url("../media/effects/img-1.jpg");
+            }
+
+            &:nth-child(2) {
+                background-image: url("../media/effects/img-2.jpg");
+            }
+
+            &:nth-child(3) {
+                background-image: url("../media/effects/img-3.jpg");
+            }
+
+            &:nth-child(4) {
+                background-image: url("../media/effects/img-4.jpg");
+            }
+
+            &:nth-child(5) {
+                background-image: url("../media/effects/img-5.jpg");
+            }
+        }
+    }
+
+    &_right {
+        .effects__item {
+            &:nth-child(1) {
+                background-image: url("../media/effects/img-6.jpg");
+            }
+
+            &:nth-child(2) {
+                background-image: url("../media/effects/img-7.jpg");
+            }
+
+            &:nth-child(3) {
+                background-image: url("../media/effects/img-8.jpg");
+            }
+
+            &:nth-child(4) {
+                background-image: url("../media/effects/img-9.jpg");
+            }
+
+            &:nth-child(5) {
+                background-image: url("../media/effects/img-10.jpg");
+            }
+        }
+    }
+}
+
+.effects__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 167px;
+    height: 167px;
+    padding: 15px;
+    margin: 14px;
+    overflow: hidden;
+    font-weight: 700;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+
+    & span {
+        display: block;
+    }
+}
+
+.effects__media {
+    margin-bottom: -120px;
+}
+
+@media (max-width: 1310px) {
+    .effects__body {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .effects__box {
+        margin: 0;
+
+        &_left {
+            flex: 0 0 50%;
+            order: 1;
+
+            & .effects__item {
+                &:last-child {
+                    flex-grow: 1;
+                    background-image: url("../media/effects/img-5-1310.jpg");
+                }
+            }
+        }
+
+        &_right {
+            flex: 0 0 50%;
+            order: 2;
+
+            & .effects__item {
+                &:last-child {
+                    flex-grow: 1;
+                    background-image: url("../media/effects/img-10-1310.jpg");
+                }
+            }
+        }
+    }
+
+    .effects__item {
+        margin: 8px;
+    }
+
+    .effects__media {
+        order: 3;
+        max-width: 350px;
+        margin-right: auto;
+        margin-bottom: -60px;
+        margin-left: auto;
+    }
+
+    .effects__description {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .effects__box_left {
+        justify-content: flex-end;
+    }
+
+    .effects__box {
+        & .effects__item:last-child {
+            flex-grow: 0;
+        }
+    }
+
+    .effects__media {
+        margin-bottom: -40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .effects__box {
+        width: 50%;
+
+        &_left {
+            & .effects__item {
+                &:last-child {
+                    background-image: url("../media/effects/img-5.jpg");
+                }
+            }
+        }
+
+        &_right {
+            & .effects__item {
+                &:last-child {
+                    background-image: url("../media/effects/img-10.jpg");
+                }
+            }
+        }
+    }
+
+    .effects__item {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 5px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
