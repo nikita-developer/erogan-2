@@ -2,6 +2,7 @@
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: #fff;
 
     &_face {
         padding-top: 30px;
@@ -11,6 +12,12 @@
         background-size: cover;
     }
 
+    &_dangers {
+        background-image: url("../media/section/dangers.jpg");
+        background-position: center;
+        background-size: auto 100%;
+    }
+
     &_commits {
         padding-top: 0;
         background-color: #000;
@@ -18,7 +25,7 @@
 }
 
 .section__title {
-    font-size: 68px;
+    font-size: 56px;
     font-weight: 800;
     line-height: 1;
 }
@@ -27,6 +34,10 @@
     .section {
         padding-top: 60px;
         padding-bottom: 60px;
+
+        &_dangers {
+            background-image: url("../media/section/dangers-1310.jpg");
+        }
     }
 
     .section__title {
@@ -42,6 +53,13 @@
         &_face {
             background-image: url("../media/section/face-768.jpg");
         }
+
+        &_dangers {
+            padding-bottom: 480px;
+            background-image: url("../media/section/dangers-768.jpg");
+            background-position: center bottom;
+            background-size: auto;
+        }
     }
 
     .section__title {
@@ -50,6 +68,13 @@
 }
 
 @media (max-width: 480px) {
+    .section {
+        &_dangers {
+            padding-bottom: 360px;
+            background-image: url("../media/section/dangers-480.jpg");
+        }
+    }
+
     .section__title {
         font-size: 30px;
     }

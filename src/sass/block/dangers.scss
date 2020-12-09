@@ -1,0 +1,78 @@
+
+.dangers {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+}
+
+.dangers__info {
+    max-width: 520px;
+    margin-left: auto;
+}
+
+.dangers__title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    & span {
+        color: #c3495a;
+    }
+}
+
+.dangers__description {
+    font-size: 18px;
+
+    & p {
+        margin-bottom: 25px;
+    }
+}
+
+.dangers__list-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b233a;
+}
+
+.dangers__item {
+    position: relative;
+    padding: 5px 5px 5px 40px;
+    font-size: 20px;
+    color: #a53559;
+    background-color: #f7f7f7;
+
+    &::before {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        content: '—';
+    }
+
+    & + & {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1310px) {
+    .dangers__title {
+        margin-bottom: 15px;
+        font-size: 36px;
+    }
+
+    .dangers__description {
+        & p {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dangers {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .dangers__info {
+        max-width: 100%;
+    }
+}
