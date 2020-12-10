@@ -23,11 +23,13 @@
     margin-right: 3px !important;
     margin-left: 3px !important;
     background-color: #fff !important;
+    border: 1px solid #000 !important;
     border-radius: 50% !important;
 }
 
 .commits__box .owl-dot.active {
     background-color: #75ba8e !important;
+    border-color: #75ba8e !important;
 }
 
 .commits__box .owl-dot:focus {
