@@ -1,0 +1,150 @@
+
+.professional {
+    position: relative;
+}
+
+.professional__title {
+    margin-bottom: 20px;
+    color: #fff;
+
+    & span {
+        display: block;
+    }
+}
+
+.professional__body {
+    max-width: 1000px;
+    padding: 45px;
+    background-color: #fff;
+}
+
+.professional__description {
+    max-width: 590px;
+
+    & p {
+        font-size: 18px;
+
+        &:first-child {
+            font-size: 22px;
+            color: #135b70;
+        }
+
+        & + p {
+            margin-top: 15px;
+        }
+    }
+}
+
+.professional__footer {
+    display: flex;
+    align-items: center;
+    padding: 35px 45px;
+}
+
+.professional__name {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+
+    & span {
+        display: block;
+        font-weight: 400;
+    }
+}
+
+.professional__media {
+    position: absolute;
+    right: 30px;
+    bottom: -120px;
+}
+
+@media (max-width: 1310px) {
+    .professional__media {
+        right: 0;
+        bottom: -60px;
+        max-width: 300px;
+    }
+
+    .professional__description {
+        & p {
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                max-width: 455px;
+            }
+        }
+    }
+
+    .professional__id {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__body {
+        padding: 30px 15px;
+    }
+
+    .professional__media {
+        bottom: -40px;
+        max-width: 200px;
+    }
+
+    .professional__description {
+        & p {
+            &:nth-child(4) {
+                max-width: 310px;
+            }
+        }
+    }
+
+    .professional__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 15px;
+    }
+
+    .professional__name {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__media {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 374px) {
+    .professional__media {
+        right: -15px;
+    }
+
+    .professional__footer {
+        padding: 15px 0;
+    }
+
+    .professional__name {
+        font-size: 16px;
+
+        & span {
+            font-size: 14px;
+        }
+    }
+
+    .professional__id {
+        max-width: 120px;
+    }
+
+    .professional__description {
+        & p {
+            font-size: 16px;
+
+            &:first-child {
+                font-size: 18px;
+            }
+        }
+    }
+}
