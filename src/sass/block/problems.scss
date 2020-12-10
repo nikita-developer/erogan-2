@@ -55,8 +55,6 @@
 
 @media (max-width: 1580px) {
     .problems {
-        position: static;
-        top: auto;
         display: flex;
         padding: 40px;
         margin-right: 0;
@@ -66,6 +64,7 @@
 
 @media (max-width: 1310px) {
     .problems {
+        position: static;
         background-image: url("../media/problems/bg-768.jpg");
     }
 
