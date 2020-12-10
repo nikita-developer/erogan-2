@@ -1,0 +1,132 @@
+
+.sostav__title {
+    text-align: center;
+
+    & mark {
+        display: block;
+        color: #73bc51;
+    }
+}
+
+.sostav__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sostav__box {
+    width: 100%;
+    max-width: 400px;
+    margin-top: -110px;
+}
+
+.sostav__media {
+    margin-top: 50px;
+}
+
+.sostav__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 240px;
+    padding: 15px 20px;
+    color: #fff;
+    background-size: cover;
+    border-radius: 3px;
+
+    & + & {
+        margin-top: 30px;
+    }
+}
+
+.sostav__box_left {
+    & .sostav__item {
+        &:nth-child(1) {
+            background-image: url("../media/sostav/img-1.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../media/sostav/img-2.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../media/sostav/img-3.jpg");
+        }
+    }
+}
+
+.sostav__box_right {
+    & .sostav__item {
+        &:nth-child(1) {
+            background-image: url("../media/sostav/img-4.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../media/sostav/img-5.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../media/sostav/img-6.jpg");
+        }
+    }
+}
+
+.sostav__name {
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1310px) {
+    .sostav__title {
+        margin-bottom: 30px;
+    }
+
+    .sostav__body {
+        flex-wrap: wrap;
+    }
+
+    .sostav__box {
+        flex: 0 0 calc(50% - 7.5px);
+        margin-top: 0;
+    }
+
+    .sostav__box_left {
+        order: 1;
+    }
+
+    .sostav__box_right {
+        order: 2;
+    }
+
+    .sostav__media {
+        display: none;
+        order: 3;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sostav__item {
+        & + & {
+            margin-top: 15px;
+        }
+    }
+
+    .sostav__description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sostav__body {
+        flex-direction: column;
+    }
+
+    .sostav__box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sostav__box_left {
+        margin-bottom: 15px;
+    }
+}
