@@ -24,11 +24,15 @@
         background-size: cover;
     }
 
+    &_problems {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
     &_commits {
         padding-top: 0;
         background-color: #000;
     }
-
 }
 
 .section__title {
@@ -36,6 +40,13 @@
     font-weight: 800;
     line-height: 1;
     text-transform: uppercase;
+}
+
+@media (max-width: 1580px) {
+    .section_problems {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 @media (max-width: 1310px) {

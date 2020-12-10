@@ -1,0 +1,88 @@
+
+.problems {
+    position: relative;
+    top: -70px;
+    display: flex;
+    padding: 90px 150px;
+    margin-right: -150px;
+    margin-left: -150px;
+    background-color: #e2e9e9;
+    background-image: url("../media/problems/bg.jpg");
+    background-size: cover;
+}
+
+.problems__body {
+    width: 50%;
+    margin-left: auto;
+}
+
+.problems__title {
+    margin-bottom: 30px;
+
+    & mark {
+        color: #c3495a;
+    }
+}
+
+.problems__description {
+    max-width: 515px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.problems__list {
+    max-width: 490px;
+}
+
+.problems__item {
+    position: relative;
+    padding: 8px 15px 8px 32px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #c3495a;
+
+    &::before {
+        position: absolute;
+        top: 7px;
+        left: 12px;
+        content: '—';
+    }
+
+    & + & {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1580px) {
+    .problems {
+        position: static;
+        top: auto;
+        display: flex;
+        padding: 40px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1310px) {
+    .problems {
+        background-image: url("../media/problems/bg-768.jpg");
+    }
+
+    .problems__body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .problems {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .problems__title {
+        font-size: 24px;
+    }
+}
