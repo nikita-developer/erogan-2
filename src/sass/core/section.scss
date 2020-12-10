@@ -29,6 +29,13 @@
         padding-bottom: 50px;
     }
 
+    &_treatment {
+        padding-bottom: 0;
+        background-image: url("../media/section/treatment.jpg");
+        background-position: right top;
+        background-size: cover;
+    }
+
     &_commits {
         padding-top: 0;
         background-color: #000;
@@ -57,6 +64,13 @@
         &_dangers {
             background-image: url("../media/section/dangers-1310.jpg");
         }
+
+        &_treatment {
+            padding-top: 0;
+            background-image: url("../media/section/treatment-1310.jpg");
+            background-position: center bottom;
+            background-size: cover;
+        }
     }
 
     .section__title {
@@ -79,6 +93,11 @@
             background-position: center bottom;
             background-size: auto;
         }
+
+        &_treatment {
+            padding-top: 0;
+            background-image: url("../media/section/treatment-768.jpg");
+        }
     }
 
     .section__title {
@@ -91,6 +110,13 @@
         &_dangers {
             padding-bottom: 360px;
             background-image: url("../media/section/dangers-480.jpg");
+        }
+
+        &_treatment {
+            padding-top: 0;
+            background-image: url("../media/section/treatment-480.jpg");
+            background-position: center bottom;
+            background-size: 100% auto;
         }
     }
 
