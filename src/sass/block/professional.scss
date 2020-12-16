@@ -38,6 +38,7 @@
 .professional__footer {
     display: flex;
     align-items: center;
+    max-width: 750px;
     padding: 35px 45px;
 }
 
@@ -56,7 +57,7 @@
 .professional__media {
     position: absolute;
     right: 30px;
-    bottom: -120px;
+    bottom: -60px;
 }
 
 @media (max-width: 1310px) {
@@ -74,6 +75,10 @@
                 max-width: 455px;
             }
         }
+    }
+
+    .professional__footer {
+        max-width: 470px;
     }
 
     .professional__id {
@@ -102,6 +107,7 @@
     .professional__footer {
         flex-direction: column;
         align-items: flex-start;
+        max-width: 260px;
         padding: 30px 15px;
     }
 
